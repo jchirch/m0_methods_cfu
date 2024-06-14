@@ -85,8 +85,21 @@ num2.zero?
 # In this example the return value is 12 because 12 is the square root of the integer object stored in the num2 variable.
 Integer.sqrt(num1)
 
-# SECTION 4: Calling methods on variables assigned to arrays.
+puts "SECTION 4: Calling methods on variables assigned to arrays."
 # Declare 2 variables assigned to arrays. 
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+arr1 = [45, 38, 99]
+arr2 = ["quill", "pen", "charcoal"]
+
+# The .sum method is called on the arr1 variable which stores the array object [45, 38, 99].
+# The .sum method takes the values stored in arr1 as the argument and returns the integer sum of all elements within the array object.
+# In the example below the return value is 182 because the method iterated over all elements within arr1 and added the sum of all values.
+arr1.sum
+
+# The .length method is called on the arr2 variable which stores the array object ["quill", "pen", "charcoal"]
+# The .length method takes the values stored in arr2 as an argument and returns the count of the elements within the array object.
+# In the example below the return value is 3 because the method iterated over all index positions within arr2 and counted the total sum of index positions.
+arr2.length
